@@ -1,0 +1,44 @@
+
+nav{
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(74, 5, 5, 0.043);
+}
+
+@media (max-width: 576px) { 
+    .responsive-logo {
+      width: 150px; 
+  }
+  .alignment{
+    margin-left: 70%;
+}
+#apply{
+    padding: 8px;
+}
+#navbarNav {
+    max-width: 400px;
+    backdrop-filter: blur(8px); 
+    
+  }
+
+  
+}
+  @media (min-width: 576px) and (max-width: 767px) { 
+    .responsive-logo {
+      width: 75px; 
+  }
+
+
+  
+.alignment{
+    margin-left: 70%;
+}
+
+}
+#navbarNav{
+    margin-left: 100px;
+    
+}
+#apply{
+    background-color: orange;
+    
+}

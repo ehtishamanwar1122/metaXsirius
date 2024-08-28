@@ -1,0 +1,42 @@
+.content{
+    padding: 200px;
+}
+#apply{
+    background-color: orange;
+}
+.hero_images{
+    background-image: url(../../assets/hero_back.png);
+}
+@media (max-width: 576px) { 
+    .hero{
+        padding: 0;
+        margin-top: -150px;
+        
+    }
+    #apply{
+        width: 100px;
+        font-size: 15px;
+    }
+    h4{
+        font-size: 20px;
+        width: 200px;
+    }
+    .hero_images{
+        margin-top: -180px;
+        border-radius: 70%;
+        object-fit: contain;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    .hero{
+        padding: 0;
+        margin-top: -100px;
+        
+    }
+    .hero_images{
+        margin-top: -180px;
+        border-radius: 70%;
+        object-fit: contain;
+    }
+    
+}
