@@ -1,9 +1,7 @@
 .content{
     padding: 200px;
 }
-.apply{
-    background-color: orange;
-}
+
 
 @media (max-width: 576px) { 
     .hero{
