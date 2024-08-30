@@ -1,0 +1,25 @@
+.footer-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-top-left-radius:2cm;
+    border-top-right-radius:2cm ;
+    height: 70vh;
+  }
+  
+  .foot {
+    padding: 20px; 
+    height: 85%;
+    border-bottom: 1px solid #fff;
+  }
+  
+  .footer-container p {
+    color: #ffffff;
+  }
+  .footer-logo{
+    margin-top: -25vh;
+    margin-left: 10vh;
+  }
+  .hyper-links{
+    margin-right: auto;
+    padding-left: 50vh;
+  }

@@ -1,0 +1,48 @@
+.image-about {
+    max-height: 300px;
+  }
+  
+  .about-head {
+    display: flex;
+  }
+  
+  .about-head h1 {
+    color: rgb(0, 0, 0);
+    margin-bottom: 20%;
+    padding: 0%;
+    text-align: center;
+
+  }
+  
+@media (max-width:520px) {
+    .about-head {
+        display:flex;
+        align-self: center;
+        justify-content: center;
+        margin-bottom: 0%;
+        padding-bottom: 0%;
+    }
+    .about-head h1 {
+        margin: 2%;
+    }
+    .about-body p{
+        text-align: justify;
+        
+    }
+}
+@media (max-width: 767.98px) {
+    .about-body p {
+      text-align: justify;
+    }
+    .about-head {
+        display:flex;
+        align-self: center;
+        justify-content: center;
+        margin-bottom: 0%;
+        padding-bottom: 0%;
+    }
+    .about-head h1 {
+        margin: 2%;
+    }
+  }
+  

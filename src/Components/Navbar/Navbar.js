@@ -1,7 +1,7 @@
 import React from 'react';
 import './Navbar.css';
 import { useState } from 'react';
-import logo from '../../assets/Images/logo.png'; 
+import { Logo } from '../../assets/Images/Index';
 import { FaArrowRightToBracket } from "react-icons/fa6";
 
 const Navbar = () => {
@@ -13,7 +13,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-light ">
       <div className="container">
         <a className="navbar-brand col-md-3 col-sm-3 " href="#">
-          <img src={logo} alt="Logo" className="responsive-logo img-fluid d-flex flex justify col-md-12 col-sm-12" />
+          <img src={Logo} alt="Logo" className="responsive-logo img-fluid d-flex flex justify col-md-12 col-sm-12" />
         </a>
 
      

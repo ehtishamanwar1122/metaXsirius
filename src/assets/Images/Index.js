@@ -1,0 +1,11 @@
+import CardImage from './card.png'
+import CriteriaImage from './criteria.png'
+import FooterLogo from './footer_logo.png'
+import HeroImage from './hero.png'
+import Logo from  './logo.png'
+import RecieveAndTradeImage from './recieveandtrade.png' 
+import RecordImage from './record.png'
+import TrackImage from './track.png'
+import AboutImage1 from './about1.png'
+import AboutImage2  from './about2.png'
+export { CardImage, CriteriaImage, FooterLogo, HeroImage, Logo, RecieveAndTradeImage, RecordImage, TrackImage,AboutImage1,AboutImage2 };

@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
-import Navbar from './Components/Navbar/Navbar';
-import Hero from './Components/Hero/Hero';
+import { Navbar,Hero,Card,Dashboard,Criteria,RecieveAndTrade,Record,PhasesList,About, Footer } from './Components/index';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -9,6 +8,14 @@ function App() {
     <>
       <Navbar />
       <Hero />
+      <Dashboard />
+      <Card />
+      <Criteria />
+      <Record />
+      <RecieveAndTrade />
+      <PhasesList />
+      <About />
+      <Footer />
     </>
   );
 }
