@@ -1,44 +1,74 @@
-
-nav{
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(74, 5, 5, 0.043);
+/* Navbar styles */
+nav {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(74, 5, 5, 0.043);
 }
 
+/* Styles for small screens */
 @media (max-width: 576px) { 
-    .responsive-logo {
+  .responsive-logo {
       width: 150px; 
   }
-  .alignment{
-    margin-left: 70%;
-}
-#apply{
-    padding: 8px;
-}
-#navbarNav {
-    max-width: 400px;
-    backdrop-filter: blur(8px); 
-    
+  .alignment {
+      margin-left: 0%;
   }
-
   
+  #navbarNav {
+      max-width: 400px;
+      backdrop-filter: blur(8px); 
+      position: fixed;
+      top: 56px; 
+      padding: 45px;
+      background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent */
+      z-index: 1051; 
+      border-radius: 15px;
+     right: 0;
+  }
+  #navbarNav button{
+    padding: 10px 0px;
+    width: 120px;
+  }
+  .navbar-brand {
+      margin-left: 32px;
+  }
 }
-  @media (min-width: 576px) and (max-width: 767px) { 
-    .responsive-logo {
+
+/* Styles for medium screens */
+@media (min-width: 576px) and (max-width: 786px) { 
+  .responsive-logo {
       width: 75px; 
   }
-
-
-  
-.alignment{
-    margin-left: 70%;
+  .navbar-brand {
+      margin-left: -63px;
+  }
+  .alignment {
+      margin-left: 0%;
+  }
 }
 
+
+@media (min-width: 786px) {
+  .navbar-brand {
+      margin-left: -45px;
+  }
 }
-#navbarNav{
-    margin-left: 100px;
-    
+
+#navbarNav {
+  margin-left: 120px;
 }
-#apply{
-    background-color: orange;
-    
+
+#apply {
+  background-color: orange;
+}
+
+/* Overlay for dim background */
+.navbar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1040;
+  transition: opacity 0.3s ease;
 }

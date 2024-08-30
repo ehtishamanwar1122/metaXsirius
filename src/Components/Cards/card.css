@@ -101,4 +101,10 @@
     .custom-card p {
       font-size: 0.9em; 
     }
+    .card-top{
+      min-height: 210vh;
+    }
+    .card-top2{
+      min-height: 220vh;
+    }
   }

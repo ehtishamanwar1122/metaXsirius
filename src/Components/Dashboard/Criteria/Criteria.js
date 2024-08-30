@@ -14,7 +14,7 @@ const Criteria = () => {
     <div>
 
       <div className="dashboard_body container-fluid p-5 py-0">
-        <div className="row align-items-center">
+        <div className="row align-items-center flex-column-reverse flex-md-row">
             <DashboardImage src={CriteriaImage} alt="Track your trades with our demo" />
             <DashboardContent title="Meet Criteria and Advance" content={content} />
         </div>

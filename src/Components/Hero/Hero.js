@@ -10,7 +10,7 @@ const Hero = () => {
                  <h1 className="fw-bolder  p-0">MeTa 5 x SIRIUS</h1>
 
                   <p className="lead">Track, Learn, and Master Your Trading Journey</p>
-                  <button className="btn btn-lg col-md-4 col-sm-4 " id='apply'>Apply Now</button>
+                  <button className="btn btn-lg col-md-4 col-sm-4 apply">Apply Now</button>
               </div>
 
     <div className="col-md-6 text-center py-4">

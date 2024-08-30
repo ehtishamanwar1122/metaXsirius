@@ -3,12 +3,13 @@
     padding: 20px;
     border-top-left-radius:2cm;
     border-top-right-radius:2cm ;
-    height: 70vh;
+    height: 80vh;
+    margin-top:10px ;
   }
   
   .foot {
     padding: 20px; 
-    height: 85%;
+    height: 90%;
     border-bottom: 1px solid #fff;
   }
   
@@ -18,8 +19,31 @@
   .footer-logo{
     margin-top: -25vh;
     margin-left: 10vh;
+    height: 20px;
+
   }
   .hyper-links{
     margin-right: auto;
-    padding-left: 50vh;
+    padding-left: 35vh;
   }
+  @media (min-width: 767px) {
+    .footer-logo {
+      margin: 0px  40px 110px 200px;
+      min-height: 20px;
+      min-width: 300px;
+    }
+    
+  }
+  @media (max-width: 767px) {
+    .footer-logo {
+      margin: 10px  40px 0px 80px;
+      min-height: 20px;
+      min-width: 200px;
+
+    }
+    .hyper-links{
+      text-align: center;
+      padding-left: 25vh;
+    }
+  }
+  
