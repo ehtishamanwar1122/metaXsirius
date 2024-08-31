@@ -34,7 +34,7 @@ const About = () => {
           <img
             src={AboutImage2}
             alt="About Us Image 2"
-            className="col-md-12 col-12 img-fluid rounded-start image-about"
+            className="col-md-12 col-12 img-fluid rounded-start image-about image2"
           />
         </div>
       </div>

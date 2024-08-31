@@ -1,49 +1,114 @@
 .footer-container {
-    background-color: #f8f9fa;
-    padding: 20px;
-    border-top-left-radius:2cm;
-    border-top-right-radius:2cm ;
-    height: 80vh;
-    margin-top:10px ;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-top-left-radius: 2cm;
+  border-top-right-radius: 2cm;
+  height: 80vh;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.foot {
+  padding: 20px;
+  height: 90%;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-container p {
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer-logo {
+  margin-top: -25vh;
+  margin-left: 10vh;
+  height: 20px;
+}
+
+.hyper-links {
+  margin-right: auto;
+  padding-left: 35vh;
+}
+
+
+@media (min-width: 768px) {
+  .footer-logo {
+    margin: 0px 40px 110px 200px;
+    height: 100px;
+    width: 200px;
   }
   
+  .hyper-links {
+    padding: 0;
+    text-align: left;
+    background-color: black;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-container {
+    height: 60vh;
+    padding: 15px;
+  }
+
   .foot {
-    padding: 20px; 
-    height: 90%;
-    border-bottom: 1px solid #fff;
+    height: 85%;
   }
-  
-  .footer-container p {
-    color: #ffffff;
-  }
-  .footer-logo{
-    margin-top: -25vh;
-    margin-left: 10vh;
-    height: 20px;
 
+  .footer-logo {
+    margin: 10px 40px 0px 50px;
+    min-height: 20px;
+    min-width: 200px;
   }
-  .hyper-links{
-    margin-right: auto;
-    padding-left: 35vh;
-  }
-  @media (min-width: 767px) {
-    .footer-logo {
-      margin: 0px  40px 110px 200px;
-      min-height: 20px;
-      min-width: 300px;
-    }
-    
-  }
-  @media (max-width: 767px) {
-    .footer-logo {
-      margin: 10px  40px 0px 80px;
-      min-height: 20px;
-      min-width: 200px;
 
-    }
-    .hyper-links{
-      text-align: center;
-      padding-left: 25vh;
-    }
+  .hyper-links {
+    text-align: center;
+    padding-left: 15vh;
   }
-  
+}
+
+@media (max-width: 576px) {
+  .footer-container {
+    height: 50vh;
+  }
+
+  .foot {
+    height: 80%;
+  }
+
+  .hyper-links {
+    text-align: center;
+    padding-left: 13vh;
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+
+@media (min-device-width: 414px) {
+  .footer-logo {
+    margin: 0;
+    padding: 0;
+  }
+
+  .hyper-links h5 {
+    font-size: 24px;
+  }
+
+  .hyper-links {
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-container {
+    height: 40vh;
+  }
+
+  .foot {
+    height: 85%;
+  }
+}

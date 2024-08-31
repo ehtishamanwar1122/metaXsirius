@@ -45,4 +45,10 @@
         margin: 2%;
     }
   }
-  
+  @media only screen 
+  and (min-device-width: 414px) {
+    .image2{
+      height: 60vh;
+      margin-bottom: 20px;
+    }
+  }

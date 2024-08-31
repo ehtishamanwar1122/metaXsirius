@@ -1,10 +1,10 @@
-/* Navbar styles */
+
 nav {
   background-color: #fff;
   box-shadow: 0 4px 6px rgba(74, 5, 5, 0.043);
 }
 
-/* Styles for small screens */
+
 @media (max-width: 576px) { 
   .responsive-logo {
       width: 150px; 
@@ -22,7 +22,7 @@ nav {
       background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent */
       z-index: 1051; 
       border-radius: 15px;
-     right: 0;
+      right: 0;
   }
   #navbarNav button{
     padding: 10px 0px;
@@ -33,7 +33,7 @@ nav {
   }
 }
 
-/* Styles for medium screens */
+
 @media (min-width: 576px) and (max-width: 786px) { 
   .responsive-logo {
       width: 75px; 
@@ -51,6 +51,7 @@ nav {
   .navbar-brand {
       margin-left: -45px;
   }
+  
 }
 
 #navbarNav {
@@ -58,10 +59,10 @@ nav {
 }
 
 #apply {
-  background-color: orange;
+  background-color: #f8a601;
 }
 
-/* Overlay for dim background */
+
 .navbar-overlay {
   position: fixed;
   top: 0;

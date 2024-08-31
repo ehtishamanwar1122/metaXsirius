@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light">
+      <nav className="navbar navbar-expand-md navbar-light">
         <div className="container">
           <a className="navbar-brand col-md-3 col-sm-3" href="#">
             <img src={Logo} alt="Logo" className="responsive-logo img-fluid d-flex flex justify col-md-12 col-sm-12" />
@@ -33,7 +33,7 @@ const Navbar = () => {
             className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`}
             id="navbarNav"
           >
-            <ul className="navbar-nav mb-2 mb-lg-0 alignment">
+            <ul className="navbar-nav ms-4 mb-2 mb-lg-0 alignment" style={{fontFamily:'General Sans'}}>
               <li className="nav-item">
                 <a className="nav-link active" href="#">Home</a>
               </li>
@@ -47,10 +47,10 @@ const Navbar = () => {
                 <a className="nav-link" href="#">Phases</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">About</a>
+                <a className="nav-link" href="#">About Us</a>
               </li>
             </ul>
-            <button className="btn alignment" id='apply'>
+            <button className="btn alignment ms-4" id='apply'>
               Apply Now <FaArrowRightToBracket className="ms-2" />
             </button>
           </div>
