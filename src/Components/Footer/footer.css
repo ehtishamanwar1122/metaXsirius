@@ -1,9 +1,9 @@
 .footer-container {
   background-color: #f8f9fa;
   padding: 20px;
-  border-top-left-radius: 2cm;
-  border-top-right-radius: 2cm;
-  height: 80vh;
+  border-top-left-radius: 40px; 
+  border-top-right-radius: 40px;
+  height: 60vh;
   margin-top: 10px;
   display: flex;
   flex-direction: column;
@@ -12,9 +12,9 @@
 }
 
 .foot {
-  padding: 20px;
+  padding: 40px;
   height: 90%;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #ffffff;
   width: 100%;
   box-sizing: border-box;
 }
@@ -32,23 +32,22 @@
 
 .hyper-links {
   margin-right: auto;
-  padding-left: 35vh;
 }
-
 
 @media (min-width: 768px) {
   .footer-logo {
-    margin: 0px 40px 110px 200px;
-    height: 100px;
-    width: 200px;
+    margin: 0 40px 110px 200px;
+    height: 200px;
+    width: 400px;
   }
-  
+
   .hyper-links {
-    padding: 0;
+    padding-left: 50vh;
     text-align: left;
-    background-color: black;
+    margin-right: auto; 
   }
 }
+
 
 @media (max-width: 767px) {
   .footer-container {
@@ -61,7 +60,7 @@
   }
 
   .footer-logo {
-    margin: 10px 40px 0px 50px;
+    margin: 10px 40px 0 50px;
     min-height: 20px;
     min-width: 200px;
   }
@@ -72,6 +71,7 @@
   }
 }
 
+/* Small screens */
 @media (max-width: 576px) {
   .footer-container {
     height: 50vh;
@@ -83,7 +83,7 @@
 
   .hyper-links {
     text-align: center;
-    padding-left: 13vh;
+    padding-left: 10vh;
     margin-top: 0;
     padding-top: 0;
   }
@@ -92,7 +92,7 @@
 @media (min-device-width: 414px) {
   .footer-logo {
     margin: 0;
-    padding: 0;
+    padding: 0 0 10px 0;
   }
 
   .hyper-links h5 {
@@ -106,6 +106,7 @@
 
   .footer-container {
     height: 40vh;
+    
   }
 
   .foot {
