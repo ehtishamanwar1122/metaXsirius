@@ -10,7 +10,7 @@ const Footer = () => {
         <img src={FooterLogo} alt='logo' className='img-fluid footer-logo' />
       </div>
 
-        <div className='hyper-links'>
+        <div className='hyper-links '>
           <h5 className='text-white'>Quick links</h5>
           <ul className="list-unstyled d-flex flex-column flex-md-column mb-0 me-auto">
             <li className="me-md-4 mb-2 mb-md-0">

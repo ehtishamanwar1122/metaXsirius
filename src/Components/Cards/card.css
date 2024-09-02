@@ -1,3 +1,4 @@
+/* General Styles for Card and Icons */
 .card {
   background-color: rgb(255, 255, 255);
   background-size: cover;
@@ -21,12 +22,12 @@
 
 .card-top {
   background: #020e26;
-  min-height: 90vh;
+
 }
 
 .card-top2 {
   background: #020e26;
-  min-height: 195vh; 
+
 }
 
 h1 {
@@ -44,7 +45,6 @@ h1 {
   color: #fff;
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 15px;
   margin: 0 auto 10px auto;
   position: relative;
 }
@@ -65,8 +65,7 @@ h1 {
 }
 
 .box {
-  --mask:
-    radial-gradient(118.51px at 50% 159px, #000 99%, #0000 101%) calc(50% - 106px) 0/212px 51% repeat-x,
+  --mask: radial-gradient(118.51px at 50% 159px, #000 99%, #0000 101%) calc(50% - 106px) 0/212px 51% repeat-x,
     radial-gradient(118.51px at 50% -106px, #0000 99%, #000 101%) 50% 53px/212px calc(51% - 53px) repeat-x,
     radial-gradient(118.51px at 50% calc(100% - 159px), #000 99%, #0000 101%) calc(50% - 106px) 100%/212px 51% repeat-x,
     radial-gradient(118.51px at 50% calc(100% + 106px), #0000 99%, #000 101%) 50% calc(100% - 53px)/212px calc(51% - 53px) repeat-x;
@@ -74,15 +73,28 @@ h1 {
   mask: var(--mask);
 }
 
-@media (max-width: 986px) {
+
+@media (min-width: 768px) {
+  .card-top {
+    height:100vh; 
+  }
+
+  .card-top2 {
+    height:100vh
+  }
+}
+
+@media (max-width: 786px) {
   .card {
     width: 100%;
     margin-left: 30px;
     min-height: 200px;
   }
-  .card-top2 {
-    min-height: 190vh;
+
+  .card-top2, .card-top {
+    height: 215vh;
   }
+  
 }
 
 @media (max-width: 575.98px) {
@@ -90,40 +102,38 @@ h1 {
     width: 100%;
     margin-left: 0px;
     min-height: 200px;
+
   }
+
   .custom-card .icon {
     font-size: 20px;
   }
+
   .card h3 {
     margin-top: 2vh;
   }
+
   .custom-card p {
     font-size: 0.9em;
   }
+
   .card-top {
-    min-height: 120vh;
+    height: 215vh;
     align-items: center;
   }
+
   .card-top2 {
-    min-height: 125vh;
+    height: 220vh;
+
   }
 }
 
-@media only screen and (min-device-width: 414px) {
+@media only screen and (max-device-width: 414px) {
   .card-top2 {
-    min-height: 115vh;
+    height: 115vh;
   }
+
   .card-top {
-    min-height: 110vh;
+    height: 110vh;
   }
 }
-
-/* Adjust height for medium screens and above */
-/* @media (min-width: 768px) {
-  .card-top {
-    min-height: 70vh; 
-  }
-  .card-top2 {
-    min-height: 100vh;
-  }
-} */
