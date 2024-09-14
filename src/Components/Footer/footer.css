@@ -35,7 +35,11 @@
     align-items: center; 
   }
 
-
+  .footer-logo{
+    margin-top: -80px;
+    max-height: 40px;
+    
+  }
 
   .hyper-links {
     text-align: left; 
@@ -70,39 +74,3 @@
   }
 }
 
-/* @media (max-width: 576px) {
-  .footer-logo {
-    margin: 7vh 0 0px 0;
-    max-height: 30px;
-    min-width: 200px;
-  }
-  
-  .foot {
-    height: 90%;
-  }
-} */
-
-/* @media (max-device-width: 414px) {
-  .footer-logo {
-    margin: -20px 0 10px 0;
-    padding: 0 0 10px 0;
-    height: 40px;
-  }
-
-  .hyper-links h5 {
-    font-size: 24px;
-  }
-
-  .hyper-links {
-    margin: 0;
-    padding: 0;
-  }
-
-  .footer-container {
-    height: 40vh;
-  }
-
-  .foot {
-    height: 85%;
-  }
-} */
