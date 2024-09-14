@@ -1,7 +1,7 @@
 .footer-container {
   background-color: #f8f9fa;
   padding: 20px;
-  border-top-left-radius: 40px;
+  border-top-left-radius: 40px; 
   border-top-right-radius: 40px;
   height: 60vh;
   margin-top: 10px;
@@ -27,16 +27,18 @@
   text-align: center;
 }
 
-/* Tablets and larger screens (768px and above) */
+
 @media (min-width: 768px) {
   .foot {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
   }
 
+
+
   .hyper-links {
-    text-align: left;
+    text-align: left; 
     margin-left: 20px;
     padding-right: 50%;
   }
@@ -46,7 +48,6 @@
   }
 }
 
-/* Mobile screens (576px to 767px) */
 @media (max-width: 767px) {
   .footer-container {
     height: 60vh;
@@ -55,7 +56,7 @@
 
   .foot {
     height: 85%;
-    flex-direction: column;
+    flex-direction: column; 
   }
 
   .footer-logo {
@@ -69,41 +70,39 @@
   }
 }
 
-/* Extra small screens (Under 576px) */
-@media (max-width: 575px) {
-  .footer-container {
-    padding: 10px;
-    max-height: 40vh; 
-  }
-
-  .foot {
-    padding: 20px;
-    height: auto;
-    flex-direction: column;
-    align-items: center;
-  }
-
+/* @media (max-width: 576px) {
   .footer-logo {
-    margin-bottom: 15px;
-    min-height: 50px;
-    min-width: 150px;
+    margin: 7vh 0 0px 0;
+    max-height: 30px;
+    min-width: 200px;
+  }
+  
+  .foot {
+    height: 90%;
+  }
+} */
+
+/* @media (max-device-width: 414px) {
+  .footer-logo {
+    margin: -20px 0 10px 0;
+    padding: 0 0 10px 0;
+    height: 40px;
+  }
+
+  .hyper-links h5 {
+    font-size: 24px;
   }
 
   .hyper-links {
-    text-align: center;
-    margin-bottom: 20px;
+    margin: 0;
+    padding: 0;
   }
 
-  .hyper-links ul {
-    padding-left: 0;
-    list-style: none;
+  .footer-container {
+    height: 40vh;
   }
 
-  .hyper-links ul li {
-    margin-bottom: 10px;
+  .foot {
+    height: 85%;
   }
-
-  .footer-container p {
-    font-size: 14px;
-  }
-}
+} */
