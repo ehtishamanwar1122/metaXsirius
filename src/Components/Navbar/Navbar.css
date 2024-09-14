@@ -8,6 +8,7 @@ nav {
 @media (max-width: 576px) { 
   .responsive-logo {
       width: 150px; 
+      padding-left: 30px;
   }
   .alignment {
       margin-left: 0%;
@@ -51,11 +52,13 @@ nav {
   .navbar-brand {
       margin-left: -45px;
   }
-  
+  .navbar-nav li{
+    min-width: 15vh;
+  }
 }
 
 #navbarNav {
-  margin-left: 120px;
+  margin-left: 150px;
 }
 
 #apply {

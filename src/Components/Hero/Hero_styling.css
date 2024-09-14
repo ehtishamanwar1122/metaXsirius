@@ -1,61 +1,71 @@
 .content {
-    padding: 200px;
+  padding: 200px;
+  font-family: 'Gilroy-Bold', sans-serif;
+}
+
+.hero {
+  padding: 0;
+  margin-top: 10vh;
+  font-family: 'Gilroy-Bold', sans-serif;
+}
+.hero .apply{
+  font-size: 16px!important;
+}
+
+@media (min-width: 768px) {
+  .apply {
+    max-width: 140px;
+    
+    font-family: 'Gilroy-Bold', sans-serif;
   }
-  
+
+  .hero h4 {
+    font-size: 34px;
+    font-family: 'Gilroy-Bold', sans-serif;
+  }
+
+  .hero h1 {
+    font-size: 72px;
+    font-weight: 400;
+    font-family: 'Gilroy-Bold', sans-serif;
+  }
+}
+
+@media (max-width: 576px) {
   .hero {
     padding: 0;
     margin-top: 10vh;
-    font-family: 'Gilroy-Bold';
+    font-family: 'Gilroy-Bold', sans-serif;
   }
-  
-  @media (min-width: 768px) {
-    .apply {
-      max-width: 140px;
-    }
-  
-    .hero h4 {
-      font-size: 34px;
-    }
-  
-    .hero h1 {
-      font-size: 72px;
-    }
+
+  .apply {
+    width: 135px;
+    font-family: 'Gilroy-Bold', sans-serif;
   }
-  
-  @media (max-width: 576px) {
-    .hero {
-      padding: 0;
-      margin-top: 10vh;
-      
-    }
-  
-    .apply {
-      width: 135px;
-      font-size: 15px;
-    }
-  
-    .hero h4 {
-      font-size: 20px;
-      width: 200px;
-    }
-  
-    .hero_images {
-      margin-top: -25px;
-      border-radius: 70%;
-      object-fit: contain;
-    }
+
+  .hero h4 {
+    font-size: 20px;
+    width: 200px;
+    font-family: 'Gilroy-Bold', sans-serif;
   }
-  
-  @media (min-width: 576px) and (max-width: 767px) {
-    .hero {
-      padding: 0;
-      margin-top: 10vh;
-    }
-  
-    .hero_images {
-      margin-top: -10px;
-      border-radius: 70%;
-      object-fit: contain;
-    }
+
+  .hero_images {
+    margin-top: -25px;
+    border-radius: 70%;
+    object-fit: contain;
   }
-  
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .hero {
+    padding: 0;
+    margin-top: 10vh;
+    font-family: 'Gilroy-Bold', sans-serif;
+  }
+
+  .hero_images {
+    margin-top: -10px;
+    border-radius: 70%;
+    object-fit: contain;
+  }
+}

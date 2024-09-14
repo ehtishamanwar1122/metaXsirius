@@ -14,14 +14,19 @@ const Record = () => {
     <div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#020e26" fill-opacity="1" d="M0,192L26.7,186.7C53.3,181,107,171,160,154.7C213.3,139,267,117,320,133.3C373.3,149,427,203,480,197.3C533.3,192,587,128,640,106.7C693.3,85,747,107,800,149.3C853.3,192,907,256,960,256C1013.3,256,1067,192,1120,144C1173.3,96,1227,64,1280,90.7C1333.3,117,1387,203,1413,245.3L1440,288L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
             <div
-            className="dashboard_body container-fluid p-5 py-0"
+            className="dashboard_body container-fluid pb-md-5 pb-0 pt-3 pt-md-5 px-5" 
             style={{
                 background: "#020e25",
-                color:"#fff"
+                color:"#fff",
+                padding:'100px'
             }}
             >
         <div className="row align-items-center">
-          <DashboardContent title="Record and Earn" content={content} />
+        <DashboardContent 
+            title="Record and Earn" 
+            content={content} 
+            style={{ color: '#F6F5FA' }} 
+          />
           <DashboardImage src={RecordImage} alt="Track your trades with our demo" />
         </div>
       </div>

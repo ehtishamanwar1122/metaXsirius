@@ -13,7 +13,7 @@ const Criteria = () => {
   return (
     <div>
 
-      <div className="dashboard_body container-fluid p-5 py-0">
+      <div className="dashboard_body container-fluid pb-md-5 pb-0 pt-3 pt-md-5 px-5">
         <div className="row align-items-center flex-column-reverse flex-md-row">
             <DashboardImage src={CriteriaImage} alt="Track your trades with our demo" />
             <DashboardContent title="Meet Criteria and Advance" content={content} />

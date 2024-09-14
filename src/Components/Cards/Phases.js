@@ -33,9 +33,9 @@ const Card = ({ number, title, description }) => (
   );
 
 const PhasesList = () => (
-  <div className="box card-top2 d-flex flex-column" >
+  <div className="box card-top d-flex flex-column" >
     <h1 className="text-center text-white">Phases</h1>
-    <div className="card-list d-flex flex-wrap justify-content-between container" >
+    <div className="card-list d-flex flex-wrap justify-content-center container" >
       {cardsData.map((card) => (
         <Card 
           key={card.id} 

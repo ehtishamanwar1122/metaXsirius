@@ -1,5 +1,5 @@
 .image-about {
-    max-height: 300px;
+    max-height: 350px;
   }
   
   .about-head {
@@ -11,9 +11,12 @@
     margin-bottom: 20%;
     padding: 0%;
     text-align: center;
-
+    font-weight: 700;
   }
-  
+  .about-body p{
+    font-size: 15px;
+    text-align: justify;
+  }
 @media (max-width:520px) {
     .about-head {
         display:flex;

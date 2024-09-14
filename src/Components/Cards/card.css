@@ -1,15 +1,14 @@
 /* General Styles for Card and Icons */
 .card {
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
   background-size: cover;
   background-position: center;
   color: #0a0808;
   padding: 20px;
-  border-radius: 16px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.521);
+  border-radius: 20%;
   text-align: left;
-  margin: 30px 0;
-  width: 31%;
+  margin: 30px 10px;
+  width: 30%;
 }
 
 .icon {
@@ -20,19 +19,23 @@
   background-color: #a69db83c;
 }
 
-.card-top {
-  background: #020e26;
-
-}
-
-.card-top2 {
-  background: #020e26;
-
+.card-top, .card-top2 {
+  height: auto;
+  padding-bottom: 30px;
+  background-image: url('../../assets/Images/cards_background.png');
+  background-size: cover; 
+  background-repeat: repeat;
+  width: 100%;
 }
 
 h1 {
-  padding-top: 100px;
+  padding-top: 40px;
 }
+
+.first-card, .last-card {
+  margin-top: 60px;
+}
+
 
 .icon.number-box {
   display: flex;
@@ -45,7 +48,7 @@ h1 {
   color: #fff;
   font-size: 24px;
   font-weight: bold;
-  margin: 0 auto 10px auto;
+  margin: 0 auto 10px;
   position: relative;
 }
 
@@ -64,45 +67,21 @@ h1 {
   border: 1px solid orange;
 }
 
-.box {
-  --mask: radial-gradient(118.51px at 50% 159px, #000 99%, #0000 101%) calc(50% - 106px) 0/212px 51% repeat-x,
-    radial-gradient(118.51px at 50% -106px, #0000 99%, #000 101%) 50% 53px/212px calc(51% - 53px) repeat-x,
-    radial-gradient(118.51px at 50% calc(100% - 159px), #000 99%, #0000 101%) calc(50% - 106px) 100%/212px 51% repeat-x,
-    radial-gradient(118.51px at 50% calc(100% + 106px), #0000 99%, #000 101%) 50% calc(100% - 53px)/212px calc(51% - 53px) repeat-x;
-  -webkit-mask: var(--mask);
-  mask: var(--mask);
-}
-
-
-@media (min-width: 768px) {
-  .card-top {
-    height:100vh; 
-  }
-
-  .card-top2 {
-    height:100vh
-  }
-}
-
+/* Responsive Styles */
 @media (max-width: 786px) {
   .card {
     width: 100%;
     margin-left: 30px;
     min-height: 200px;
   }
-
-  .card-top2, .card-top {
-    height: 215vh;
-  }
-  
 }
 
 @media (max-width: 575.98px) {
   .card {
-    width: 100%;
-    margin-left: 0px;
+    padding: 50px 20px;
+    width: 85%;
+    margin: 10px auto;
     min-height: 200px;
-
   }
 
   .custom-card .icon {
@@ -116,24 +95,7 @@ h1 {
   .custom-card p {
     font-size: 0.9em;
   }
-
-  .card-top {
-    height: 215vh;
-    align-items: center;
-  }
-
-  .card-top2 {
-    height: 220vh;
-
-  }
-}
-
-@media only screen and (max-device-width: 414px) {
-  .card-top2 {
-    height: 115vh;
-  }
-
-  .card-top {
-    height: 110vh;
+  .card-top{
+    padding: 10vh 0;
   }
 }

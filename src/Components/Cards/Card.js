@@ -25,8 +25,8 @@ const cardsData = [
   }
 ];
 
-const Card = ({ Icon, title, description }) => (
-  <div className="card">
+const Card = ({ Icon, title, description, className }) => (
+  <div className={`card ${className}`}>
     <div className="icon">
       <Icon size={25} />
     </div>
@@ -35,24 +35,31 @@ const Card = ({ Icon, title, description }) => (
   </div>
 );
 
-const CardList = () => (
-  <>
-   
-    <div className="box card-top d-flex flex-column">
-      <h1 className="text-center text-white">Features</h1>
-      <div className="card-list d-flex flex-wrap justify-content-between container ">
-        {cardsData.map((card) => (
-          <Card 
-            key={card.id} 
-            Icon={card.icon} 
-            title={card.title} 
-            description={card.description} 
-          />
-        ))}
+const CardList = () => {
+  const middleIndex = Math.floor(cardsData.length / 2);
+
+  return (
+    <>
+      <div className="box card-top d-flex flex-column">
+        <h1 className="text-center text-white">Features</h1>
+        <div className="card-list d-flex flex-wrap justify-content-center container">
+          {cardsData.map((card, index) => (
+            <Card
+              key={card.id}
+              Icon={card.icon}
+              title={card.title}
+              description={card.description}
+              className={
+                index === 0 ? 'first-card' :
+                index === cardsData.length - 1 ? 'last-card' :
+                index === middleIndex ? 'central-card' : ''
+              }
+            />
+          ))}
+        </div>
       </div>
-    </div>
-   
-  </>
-);
+    </>
+  );
+}
 
 export default CardList;

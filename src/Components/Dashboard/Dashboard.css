@@ -1,57 +1,80 @@
+/* Universal styles */
+* {
+  box-sizing: border-box;
+}
+
 .dashboard_body {
-    overflow: hidden;
-    padding: 0 1rem;
-
-  }
-  .dash_img{
-    padding-top: 10px;
-  }
-.dash_img img{
-    height: 70vh;
+  overflow: hidden;
+  padding: 0 2rem;
+  margin-top: 10%;
 
 }
-.dashboard_body p{
-  font-size: 14px;
-}
-  
-  @media (max-width: 576px) {
-    .dashboard_body {
-      margin-top: -10vh;
 
-    }
-    .dashboard_head{
-        margin-top: -20%;
-        padding: 0;
-    }
-    .dash_img{
-        font-size:30px;
-        padding-top: 0vh;
-        padding-bottom: 20px;
-    }
-    .dash_img img{
-      height: 40vh;
-      
-  }
-  }
-  @media (min-width: 576px) and (max-width: 767px) {
-    .dashboard_head{
-        margin-top: -10vh;
-    }
-    .dashboard_body {
-        margin-top: -10vh;
-      }
-      .dash_img img{
-        height: 60vh;
-      }
+.dash_img {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
 }
-@media only screen 
-and (min-device-width: 414px) 
- {
-  .dashboard_head{
+
+.dash_img img {
+  height: 73vh;
+  max-width: 550px;
+  margin-top: 5%;
+}
+
+.dashboard_body p {
+  font-size: 15px;
+  font-family: 'General Sans', sans-serif;
+}
+
+
+@media (max-width: 576px) {
+  .dashboard_body {
+    margin-top: 10vh;
+    padding: 0%;
+  }
+  .dashboard_head {
+    margin-top: 20%;
+    padding: 0;
+  }
+  .dash_img {
+    font-size: 30px;
+    padding-top: 0vh;
+    padding-bottom: 20px;
+  }
+  .dash_img img {
+    height: 60vh;
+
+  }
+}
+
+/* Medium screens (min-width: 576px and max-width: 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .dashboard_head {
+    margin-top: -10vh;
+  }
+  .dashboard_body {
+    margin-top: -10vh;
+  }
+  .dash_img img {
+    height: 60vh;
+  }
+}
+
+
+@media only screen and (min-device-width: 414px) {
+  .dashboard_head {
     margin-top: -50px;
   }
   .dashboard_body {
     margin-top: -10vh;
   }
-  
+}
+
+/* Vendor Prefixes for Compatibility (if needed) */
+.dash_img img {
+  -webkit-box-sizing: border-box; /* Safari/Chrome */
+  -moz-box-sizing: border-box; /* Firefox */
+  box-sizing: border-box; /* Standard */
 }
