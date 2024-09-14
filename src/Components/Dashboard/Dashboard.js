@@ -15,7 +15,7 @@ const Dashboard = () => {
     <div>
       <DashboardHeader title="How it Works" subtitle="Step by Step Guide" />
 
-      <div className="dashboard_body container-fluid pb-md-5 pb-0 pt-3 pt-md-0 pt-md-5 px-5" >
+      <div className="dashboard_body container-fluid pb-md-5 pb-0 pt-5 pt-md-0 pt-md-5 px-5" >
         <div className="row align-items-center">
           <DashboardContent title="Track your Demo Trades" content={content} />
           <DashboardImage src={TrackImage} alt="Track your trades with our demo" />
