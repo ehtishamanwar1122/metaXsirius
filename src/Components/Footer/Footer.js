@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className='footer-container 'style={{background:"#020e26"}}>
       <div className='foot d-flex flex-column flex-md-row align-items-center justify-content-between mb-4'>
-      <div className=' mb-md-0 col-2 col-md-3 d-flex justify-content-center mt-md-3'>
+      <div className=' mb-md-0 col-2 col-md-3 d-flex justify-content-center mt-md-0'>
         <img src={FooterLogo} alt='logo' className='img-fluid footer-logo' />
       </div>
 
