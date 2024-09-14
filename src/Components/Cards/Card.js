@@ -14,7 +14,7 @@ const cardsData = [
   {
     id: 2,
     icon: GrPerformance,
-    title: "Performance and Analytics",
+    title: "Performance Analytics",
     description: "Detailed analytics to help you improve your trading strategies."
   },
   {
@@ -41,7 +41,7 @@ const CardList = () => {
   return (
     <>
       <div className="box card-top d-flex flex-column">
-        <h1 className="text-center text-white">Features</h1>
+        <h1 className="text-center text-white fw-bold">Features</h1>
         <div className="card-list d-flex flex-wrap justify-content-center container">
           {cardsData.map((card, index) => (
             <Card

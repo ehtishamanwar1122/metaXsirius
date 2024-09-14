@@ -8,7 +8,7 @@
   border-radius: 20%;
   text-align: left;
   margin: 30px 10px;
-  width: 30%;
+  width: 28%;
   max-height: 250px;
 }
 
@@ -17,7 +17,7 @@
   width: 16%;
   text-align: center;
   padding: 10px;
-  border-radius: 30%;
+  border-radius: 50%;
   background-color: #a69db83c;
 }
 
@@ -33,9 +33,12 @@
 h1 {
   padding-top: 40px;
 }
-
+.card h3{
+  font-weight: 700;
+  font-family: 'Outfit', sans-serif;
+}
 .first-card, .last-card {
-  margin-top: 100px;
+  margin-top: 70px;
 }
 
 
